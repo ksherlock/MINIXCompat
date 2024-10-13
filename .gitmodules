@@ -1,0 +1,4 @@
+[submodule "Musashi"]
+	path = Musashi
+	url = https://github.com/eschaton/Musashi.git
+	branch = eschaton/MINIXCompat

@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F54062A2CD8429F0054DA28 /* m68k.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5405F22CD841880054DA28 /* m68k.h */; };
+		9F54062B2CD8429F0054DA28 /* m68kconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5405F42CD841880054DA28 /* m68kconf.h */; };
+		9F54062C2CD8429F0054DA28 /* m68kcpu.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5405F52CD841880054DA28 /* m68kcpu.h */; };
+		9F54062D2CD8429F0054DA28 /* m68kmmu.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5405FA2CD841880054DA28 /* m68kmmu.h */; };
+		9F54062F2CD842AE0054DA28 /* m68kcpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F5405F62CD841880054DA28 /* m68kcpu.c */; };
+		9F5406302CD842AE0054DA28 /* m68kdasm.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F5405F72CD841880054DA28 /* m68kdasm.c */; };
+		9F5682012CDAD9B8004A53B8 /* m68kmake.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F5405F92CD841880054DA28 /* m68kmake.c */; };
+		9F5682082CDADF65004A53B8 /* libMusashi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5406262CD8427C0054DA28 /* libMusashi.a */; };
+		9F56821B2CDC93E2004A53B8 /* softfloat.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F5405EC2CD841880054DA28 /* softfloat.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F5682032CDADB08004A53B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F54F9712CD841200054DA28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F5681F92CDAD996004A53B8;
+			remoteInfo = m68kmake;
+		};
+		9F5682052CDADF5F004A53B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F54F9712CD841200054DA28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F5406252CD8427C0054DA28;
+			remoteInfo = Musashi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F54F9772CD841200054DA28 /* Copy Man Page */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(INSTALL_DIR)/../share/man/man1";
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Copy Man Page";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9F5681F82CDAD996004A53B8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9F34BC042D0156BD00FB162C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9F34BC052D0156C800FB162C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9F5405E82CD841880054DA28 /* mamesf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mamesf.h; sourceTree = "<group>"; };
+		9F5405E92CD841880054DA28 /* milieu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = milieu.h; sourceTree = "<group>"; };
+		9F5405EB2CD841880054DA28 /* softfloat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = softfloat.h; sourceTree = "<group>"; };
+		9F5405EC2CD841880054DA28 /* softfloat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = softfloat.c; sourceTree = "<group>"; };
+		9F5405ED2CD841880054DA28 /* softfloat-macros */ = {isa = PBXFileReference; lastKnownFileType = text; path = "softfloat-macros"; sourceTree = "<group>"; };
+		9F5405EE2CD841880054DA28 /* softfloat-specialize */ = {isa = PBXFileReference; lastKnownFileType = text; path = "softfloat-specialize"; sourceTree = "<group>"; };
+		9F5405F22CD841880054DA28 /* m68k.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = m68k.h; sourceTree = "<group>"; };
+		9F5405F32CD841880054DA28 /* m68k_in.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = m68k_in.c; sourceTree = "<group>"; };
+		9F5405F42CD841880054DA28 /* m68kconf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = m68kconf.h; sourceTree = "<group>"; };
+		9F5405F52CD841880054DA28 /* m68kcpu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = m68kcpu.h; sourceTree = "<group>"; };
+		9F5405F62CD841880054DA28 /* m68kcpu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = m68kcpu.c; sourceTree = "<group>"; };
+		9F5405F72CD841880054DA28 /* m68kdasm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = m68kdasm.c; sourceTree = "<group>"; };
+		9F5405F82CD841880054DA28 /* m68kfpu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = m68kfpu.c; sourceTree = "<group>"; };
+		9F5405F92CD841880054DA28 /* m68kmake.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = m68kmake.c; sourceTree = "<group>"; };
+		9F5405FA2CD841880054DA28 /* m68kmmu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = m68kmmu.h; sourceTree = "<group>"; };
+		9F5406262CD8427C0054DA28 /* libMusashi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMusashi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F54F9792CD841200054DA28 /* MINIXCompat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MINIXCompat; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5681FA2CDAD996004A53B8 /* m68kmake */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = m68kmake; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9F1304E62CE1C5CB00D55B71 /* Exceptions for "MINIXCompat" folder in "MINIXCompat" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MINIXCompat_EmulationOps.c,
+			);
+			target = 9F54F9782CD841200054DA28 /* MINIXCompat */;
+		};
+		9F1304E72CE1C5CB00D55B71 /* Exceptions for "MINIXCompat" folder in "Musashi" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MINIXCompat_EmulationOps.c,
+			);
+			target = 9F5406252CD8427C0054DA28 /* Musashi */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		9FBBC2A82CF53B1100B3F15A /* Exceptions for "MINIXCompat" folder in "Copy Man Page" phase from "MINIXCompat" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 9F54F9772CD841200054DA28 /* Copy Man Page */;
+			membershipExceptions = (
+				MINIXCompat.1,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9F54061F2CD8422D0054DA28 /* MINIXCompat */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9F1304E62CE1C5CB00D55B71 /* Exceptions for "MINIXCompat" folder in "MINIXCompat" target */,
+				9FBBC2A82CF53B1100B3F15A /* Exceptions for "MINIXCompat" folder in "Copy Man Page" phase from "MINIXCompat" target */,
+				9F1304E72CE1C5CB00D55B71 /* Exceptions for "MINIXCompat" folder in "Musashi" target */,
+			);
+			path = MINIXCompat;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F5406242CD8427C0054DA28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F54F9762CD841200054DA28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5682082CDADF65004A53B8 /* libMusashi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5681F72CDAD996004A53B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F5405EF2CD841880054DA28 /* softfloat */ = {
+			isa = PBXGroup;
+			children = (
+				9F5405E82CD841880054DA28 /* mamesf.h */,
+				9F5405E92CD841880054DA28 /* milieu.h */,
+				9F5405EB2CD841880054DA28 /* softfloat.h */,
+				9F5405EC2CD841880054DA28 /* softfloat.c */,
+				9F5405ED2CD841880054DA28 /* softfloat-macros */,
+				9F5405EE2CD841880054DA28 /* softfloat-specialize */,
+			);
+			path = softfloat;
+			sourceTree = "<group>";
+		};
+		9F5405FD2CD841880054DA28 /* Musashi */ = {
+			isa = PBXGroup;
+			children = (
+				9F5405EF2CD841880054DA28 /* softfloat */,
+				9F5405F22CD841880054DA28 /* m68k.h */,
+				9F5405F32CD841880054DA28 /* m68k_in.c */,
+				9F5405F42CD841880054DA28 /* m68kconf.h */,
+				9F5405F52CD841880054DA28 /* m68kcpu.h */,
+				9F5405F62CD841880054DA28 /* m68kcpu.c */,
+				9F5405F72CD841880054DA28 /* m68kdasm.c */,
+				9F5405F82CD841880054DA28 /* m68kfpu.c */,
+				9F5405F92CD841880054DA28 /* m68kmake.c */,
+				9F5405FA2CD841880054DA28 /* m68kmmu.h */,
+			);
+			path = Musashi;
+			sourceTree = "<group>";
+		};
+		9F54F9702CD841200054DA28 = {
+			isa = PBXGroup;
+			children = (
+				9F34BC042D0156BD00FB162C /* README.md */,
+				9F34BC052D0156C800FB162C /* LICENSE */,
+				9F54061F2CD8422D0054DA28 /* MINIXCompat */,
+				9F5405FD2CD841880054DA28 /* Musashi */,
+				9F54F97A2CD841200054DA28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F54F97A2CD841200054DA28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F54F9792CD841200054DA28 /* MINIXCompat */,
+				9F5406262CD8427C0054DA28 /* libMusashi.a */,
+				9F5681FA2CDAD996004A53B8 /* m68kmake */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9F54061A2CD8420F0054DA28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5406222CD8427C0054DA28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F54062A2CD8429F0054DA28 /* m68k.h in Headers */,
+				9F54062B2CD8429F0054DA28 /* m68kconf.h in Headers */,
+				9F54062C2CD8429F0054DA28 /* m68kcpu.h in Headers */,
+				9F54062D2CD8429F0054DA28 /* m68kmmu.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9F5406252CD8427C0054DA28 /* Musashi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5406272CD8427C0054DA28 /* Build configuration list for PBXNativeTarget "Musashi" */;
+			buildPhases = (
+				9F5682022CDADAA0004A53B8 /* Generate 68000 Core */,
+				9F5406222CD8427C0054DA28 /* Headers */,
+				9F5406232CD8427C0054DA28 /* Sources */,
+				9F5406242CD8427C0054DA28 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F5682042CDADB08004A53B8 /* PBXTargetDependency */,
+			);
+			name = Musashi;
+			packageProductDependencies = (
+			);
+			productName = Musashi;
+			productReference = 9F5406262CD8427C0054DA28 /* libMusashi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9F54F9782CD841200054DA28 /* MINIXCompat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F54F9802CD841200054DA28 /* Build configuration list for PBXNativeTarget "MINIXCompat" */;
+			buildPhases = (
+				9F54061A2CD8420F0054DA28 /* Headers */,
+				9F54F9752CD841200054DA28 /* Sources */,
+				9F54F9762CD841200054DA28 /* Frameworks */,
+				9F54F9772CD841200054DA28 /* Copy Man Page */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F5682062CDADF5F004A53B8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9F54061F2CD8422D0054DA28 /* MINIXCompat */,
+			);
+			name = MINIXCompat;
+			packageProductDependencies = (
+			);
+			productName = MINIXCompat;
+			productReference = 9F54F9792CD841200054DA28 /* MINIXCompat */;
+			productType = "com.apple.product-type.tool";
+		};
+		9F5681F92CDAD996004A53B8 /* m68kmake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5682002CDAD996004A53B8 /* Build configuration list for PBXNativeTarget "m68kmake" */;
+			buildPhases = (
+				9F5681F62CDAD996004A53B8 /* Sources */,
+				9F5681F72CDAD996004A53B8 /* Frameworks */,
+				9F5681F82CDAD996004A53B8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = m68kmake;
+			packageProductDependencies = (
+			);
+			productName = m68kmake;
+			productReference = 9F5681FA2CDAD996004A53B8 /* m68kmake */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F54F9712CD841200054DA28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1610;
+				ORGANIZATIONNAME = "Christopher M. Hanson";
+				TargetAttributes = {
+					9F5406252CD8427C0054DA28 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					9F54F9782CD841200054DA28 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					9F5681F92CDAD996004A53B8 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = 9F54F9742CD841200054DA28 /* Build configuration list for PBXProject "MINIXCompat" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F54F9702CD841200054DA28;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9F54F97A2CD841200054DA28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F54F9782CD841200054DA28 /* MINIXCompat */,
+				9F5406252CD8427C0054DA28 /* Musashi */,
+				9F5681F92CDAD996004A53B8 /* m68kmake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F5682022CDADAA0004A53B8 /* Generate 68000 Core */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Musashi/m68k_in.c",
+			);
+			name = "Generate 68000 Core";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(PROJECT_DERIVED_FILE_DIR)/Musashi/m68kops.c",
+				"$(PROJECT_DERIVED_FILE_DIR)/Musashi/m68kops.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "M68KMAKE=\"${BUILT_PRODUCTS_DIR}/m68kmake\"\n\nmkdir -p \"${PROJECT_DERIVED_FILE_DIR}/Musashi\"\n\n${M68KMAKE} \\\n    \"${PROJECT_DERIVED_FILE_DIR}/Musashi\" \\\n    \"${SRCROOT}/Musashi/m68k_in.c\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F5406232CD8427C0054DA28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F56821B2CDC93E2004A53B8 /* softfloat.c in Sources */,
+				9F54062F2CD842AE0054DA28 /* m68kcpu.c in Sources */,
+				9F5406302CD842AE0054DA28 /* m68kdasm.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F54F9752CD841200054DA28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5681F62CDAD996004A53B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5682012CDAD9B8004A53B8 /* m68kmake.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F5682042CDADB08004A53B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F5681F92CDAD996004A53B8 /* m68kmake */;
+			targetProxy = 9F5682032CDADB08004A53B8 /* PBXContainerItemProxy */;
+		};
+		9F5682062CDADF5F004A53B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F5406252CD8427C0054DA28 /* Musashi */;
+			targetProxy = 9F5682052CDADF5F004A53B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9F5406282CD8427C0054DA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DERIVED_FILE_DIR)/Musashi/",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9F5406292CD8427C0054DA28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DERIVED_FILE_DIR)/Musashi/",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9F54F97E2CD841200054DA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MUSASHI_CNF=\\\"MINIXCompat_Musashi.h\\\"",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9F54F97F2CD841200054DA28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MUSASHI_CNF=\\\"MINIXCompat_Musashi.h\\\"",
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9F54F9812CD841200054DA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F54F9822CD841200054DA28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9F5681FE2CDAD996004A53B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F5681FF2CDAD996004A53B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F5406272CD8427C0054DA28 /* Build configuration list for PBXNativeTarget "Musashi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5406282CD8427C0054DA28 /* Debug */,
+				9F5406292CD8427C0054DA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F54F9742CD841200054DA28 /* Build configuration list for PBXProject "MINIXCompat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F54F97E2CD841200054DA28 /* Debug */,
+				9F54F97F2CD841200054DA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F54F9802CD841200054DA28 /* Build configuration list for PBXNativeTarget "MINIXCompat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F54F9812CD841200054DA28 /* Debug */,
+				9F54F9822CD841200054DA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F5682002CDAD996004A53B8 /* Build configuration list for PBXNativeTarget "m68kmake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5681FE2CDAD996004A53B8 /* Debug */,
+				9F5681FF2CDAD996004A53B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F54F9712CD841200054DA28 /* Project object */;
+}
