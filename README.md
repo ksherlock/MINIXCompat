@@ -30,6 +30,11 @@ its argument vector.  The entire host environment is **not** passed to the
 MINIX executable, instead only environment variables with a `MINIX_` prefix
 are passed, without the prefix.
 
+I'm making [a tarball of an Atari ST MINIX 1.5.10.7
+installation](http://rendezvous.eschatologist.net/cmh/minix-st-1.5.10.7.tar.bz2)
+available which is essentially just an archive of the file hierarchy in
+the [ACSI disk image here](http://www.subsole.org/minix_on_the_atari_st).
+
 
 ## Future Work
 
